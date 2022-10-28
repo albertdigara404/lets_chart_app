@@ -42,14 +42,14 @@ class WebScreenLayout extends StatelessWidget {
             child: Column(
               children: [
                 //chat app bar
-                WebChatAppBar(),
+                const WebChatAppBar(),
                 //chats
-                Expanded(child: ChatList()),
+                const Expanded(child: ChatList()),
                 //bottom bar for message input
                 Container(
                   height: MediaQuery.of(context).size.height * 0.07,
-                  padding: EdgeInsets.all(10),
-                  decoration: BoxDecoration(
+                  padding: const EdgeInsets.all(10),
+                  decoration: const BoxDecoration(
                     border: Border(
                       bottom: BorderSide(
                         color: dividerColor,
@@ -75,7 +75,7 @@ class WebScreenLayout extends StatelessWidget {
                       ),
                       Expanded(
                         child: Padding(
-                          padding: EdgeInsets.only(left: 10, right: 15),
+                          padding: const EdgeInsets.only(left: 10, right: 15),
                           child: TextField(
                             decoration: InputDecoration(
                               filled: true,
